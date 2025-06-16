@@ -1,0 +1,31 @@
+Function	Purpose
+
+deploy_with_helm()	Deploys or upgrades app via Helm
+create_rds_snapshot()	Creates an RDS snapshot
+restore_rds_snapshot()	Restores RDS from a snapshot
+
+
+
+---
+
+📦 Example Helm Usage
+
+helm upgrade --install myapp ./helm/myapp \
+  --namespace production \
+  --set image.tag=1.5.3 \
+  --atomic --timeout 5m
+
+
+---
+
+📚 Future Enhancements
+
+[ ] Add CLI flags for individual commands
+
+[ ] Log file creation
+
+[ ] Email or Slack alerts for backup success/failure
+
+
+
+---
